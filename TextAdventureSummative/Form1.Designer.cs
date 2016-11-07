@@ -34,20 +34,24 @@
             // 
             // outputLabel
             // 
-            this.outputLabel.Location = new System.Drawing.Point(16, 9);
+            this.outputLabel.ForeColor = System.Drawing.Color.White;
+            this.outputLabel.Location = new System.Drawing.Point(21, 11);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(348, 198);
+            this.outputLabel.Size = new System.Drawing.Size(464, 244);
             this.outputLabel.TabIndex = 2;
+            this.outputLabel.Text = "OUTPUT LABEL";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(376, 456);
+            this.ClientSize = new System.Drawing.Size(501, 561);
             this.Controls.Add(this.outputLabel);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Escape from the Lost Nation";
             this.ResumeLayout(false);
