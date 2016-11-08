@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace TextAdventureSummative
 {
@@ -18,6 +19,9 @@ namespace TextAdventureSummative
         public Form1()
         {
             InitializeComponent();
+            outputLabel.Text = "You wake up in a dark room with a small trap door and a single torch. Do you go into the trap door or stay in the room?";
+            redLabel.Text = "LEAVE";
+            blueLabel.Text = "STAY";
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -37,6 +41,8 @@ namespace TextAdventureSummative
 
                 else if (scene == 3)
                 {
+                    Thread.Sleep(10000);
+
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
                     {
@@ -82,6 +88,11 @@ namespace TextAdventureSummative
                 else if (scene == 24)
                 {
                     scene = 16;
+                }
+
+                else if (scene == 26)
+                {
+                    scene = 0;
                 }
                     
             }
@@ -210,6 +221,45 @@ namespace TextAdventureSummative
                         scene = 26;
                     }
                 }
+            }
+
+            switch (scene)
+            {
+                case 0:
+                    outputLabel.Text = "You wake up in a dark room with a small trap door and a single torch. Do you go into the trap door or stay in the room?";
+                    redLabel.Text = "LEAVE";
+                    blueLabel.Text = "STAY";
+                    break;
+                case 1:
+                    outputLabel.Text = "You drop down into a long hallway and seea light in the distance. Do you return to grab your torch or start walking?";
+                    redLabel.Text = "GET TORCH";
+                    blueLabel.Text = "WALK";
+                    break;
+                case 2:
+                    outputLabel.Text = "You crawl into a ball and win! Congrats!";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    break;
+                case 3:
+                    outputLabel.Text = "You grab your torch and slowly walk down the hallway. You jump the pit. A Native jumps out and attacks you. You fight back.";
+                    redLabel.Text = "PLEASE WAIT";
+                    blueLabel.Text = "";
+                    break;
+                case 4:
+                    outputLabel.Text = "You start walking but end up falling into a pit of spikes left by the Natives";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    break;
+
+
+
+
+
+
+
+
+
+
             }
         }
     }
