@@ -188,12 +188,28 @@ namespace TextAdventureSummative
 
             else if (e.KeyCode == Keys.Space)
             {
-                if (scene == 10)
+                if (scene == 6)
                 {
                     scene = 9;
                 }
                 
-                else if (scene )
+                else if (scene == 17)
+                {
+                    attackValue = randGen.Next(1, 11);
+                    if (attackValue >= 4)
+                    {
+                        scene = 19;
+                    }
+                    else if (attackValue < 4)
+                    {
+                        scene = 22;
+                    }
+
+                    else if (scene == 22)
+                    {
+                        scene = 26;
+                    }
+                }
             }
         }
     }
