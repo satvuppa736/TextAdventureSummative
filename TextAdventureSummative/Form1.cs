@@ -250,7 +250,83 @@ namespace TextAdventureSummative
                     redLabel.Text = "";
                     blueLabel.Text = "CONTINUE";
                     break;
-
+                case 5:
+                    outputLabel.Text = "You die due to your attack being too weak. Should've taken karate when you were little";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    break;
+                case 6:
+                    outputLabel.Text = "You mercilessly beat the Native and continue to the light. You find a room with a stream and more Natives. Do you, Stealth Kill the Natives, Fight them head on, or use the stream to swim past?";
+                    redLabel.Text = "SWIM";
+                    blueLabel.Text = "FIGHT";
+                    greenLabel.Text = "STEALTH KILL";
+                    break;
+                case 7:
+                    outputLabel.Text = "You get injured by the piranhas but you escape un noticed!";
+                    redLabel.Text = "CONINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 8:
+                    outputLabel.Text = "You die due to another Native named 'Mnbungo' that suck up behind you. You're dead";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 9:
+                    outputLabel.Text = "You killed them and got away. What did you think was gonna happen?";
+                    redLabel.Text = "CONTINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 10:
+                    outputLabel.Text = "You get across the stream and make your way to a room. A pedestal stands in the center of the room, an artifact is on the pedestal. An exit door stands across the room. Do you take the artifact or make a break for the door?";
+                    redLabel.Text = "TAKE ARTIFACT";
+                    blueLabel.Text = "LEAVE";
+                    greenLabel.Text = "";
+                    break;
+                case 11:
+                    outputLabel.Text = "YOU WON!!!!!!!!!! go away now";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 12:
+                    outputLabel.Text = "The exit door slams shut but you manage to find a grappling hook and attach it to a grate over head. Natives suddenly approach out of nowhere. Do you fight or climb up the grappling hook?";
+                    redLabel.Text = "CLIMB";
+                    blueLabel.Text = "FIGHT";
+                    greenLabel.Text = "";
+                    break;
+                case 13:
+                    outputLabel.Text = "You get beaten senseless. Good Job. You died";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 14:
+                    outputLabel.Text = " You kill all of the Natives and start climbing the rope.";
+                    redLabel.Text = "CONTINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 15:
+                    outputLabel.Text = "You climb up the rope and approach a grate. Do you squeeze through the grat or break it open?";
+                    redLabel.Text = "BREAK";
+                    blueLabel.Text = "SQUEEZE THROUGH";
+                    greenLabel.Text = "";
+                    break;
+                case 16:
+                    outputLabel.Text = "HEY FATTY! You tried squeezing through the grate and ended up breaking a rib that pnctured your heart. You Died, probably again!";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 17:
+                    outputLabel.Text = "You successfully break open the grate and make it to the surface where there are more Natives. Do you fight the Natives head on, sneak past, or stealth kill them all?";
+                    redLabel.Text = "SNEAK";
+                    blueLabel.Text = "STEALTH KILL";
+                    greenLabel.Text = "FIGHT";
+                    break; 
 
 
 

@@ -37,62 +37,65 @@
             // 
             // outputLabel
             // 
+            this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(21, 11);
-            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.outputLabel.Location = new System.Drawing.Point(16, 9);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(464, 244);
+            this.outputLabel.Size = new System.Drawing.Size(348, 198);
             this.outputLabel.TabIndex = 2;
             this.outputLabel.Text = "OUTPUT LABEL";
             // 
             // redLabel
             // 
             this.redLabel.AutoSize = true;
-            this.redLabel.Font = new System.Drawing.Font("OCR A Extended", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.redLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLabel.ForeColor = System.Drawing.Color.White;
-            this.redLabel.Location = new System.Drawing.Point(88, 387);
+            this.redLabel.Location = new System.Drawing.Point(58, 314);
+            this.redLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.redLabel.Name = "redLabel";
-            this.redLabel.Size = new System.Drawing.Size(41, 18);
+            this.redLabel.Size = new System.Drawing.Size(40, 17);
             this.redLabel.TabIndex = 3;
             this.redLabel.Text = "RED";
             // 
             // blueLabel
             // 
             this.blueLabel.AutoSize = true;
-            this.blueLabel.Font = new System.Drawing.Font("OCR A Extended", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueLabel.ForeColor = System.Drawing.Color.White;
-            this.blueLabel.Location = new System.Drawing.Point(88, 465);
+            this.blueLabel.Location = new System.Drawing.Point(58, 370);
+            this.blueLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.blueLabel.Name = "blueLabel";
-            this.blueLabel.Size = new System.Drawing.Size(52, 18);
+            this.blueLabel.Size = new System.Drawing.Size(48, 17);
             this.blueLabel.TabIndex = 4;
             this.blueLabel.Text = "BLUE";
             // 
             // greenLabel
             // 
             this.greenLabel.AutoSize = true;
-            this.greenLabel.Font = new System.Drawing.Font("OCR A Extended", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greenLabel.ForeColor = System.Drawing.Color.White;
-            this.greenLabel.Location = new System.Drawing.Point(318, 387);
+            this.greenLabel.Location = new System.Drawing.Point(238, 314);
+            this.greenLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.greenLabel.Name = "greenLabel";
-            this.greenLabel.Size = new System.Drawing.Size(63, 18);
+            this.greenLabel.Size = new System.Drawing.Size(62, 17);
             this.greenLabel.TabIndex = 5;
             this.greenLabel.Text = "GREEN";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(501, 561);
+            this.ClientSize = new System.Drawing.Size(376, 456);
             this.Controls.Add(this.greenLabel);
             this.Controls.Add(this.blueLabel);
             this.Controls.Add(this.redLabel);
             this.Controls.Add(this.outputLabel);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Escape from the Lost Nation";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
