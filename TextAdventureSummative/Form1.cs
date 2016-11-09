@@ -22,6 +22,7 @@ namespace TextAdventureSummative
             outputLabel.Text = "You wake up in a dark room with a small trap door and a single torch. Do you go into the trap door or stay in the room?";
             redLabel.Text = "LEAVE";
             blueLabel.Text = "STAY";
+            greenLabel.Text = "";
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -41,7 +42,7 @@ namespace TextAdventureSummative
 
                 else if (scene == 3)
                 {
-                    Thread.Sleep(10000);
+                    Thread.Sleep(5000);
 
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
@@ -139,6 +140,8 @@ namespace TextAdventureSummative
 
                 else if (scene == 12)
                 {
+                    Thread.Sleep(5000);
+
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
                     {
@@ -165,6 +168,8 @@ namespace TextAdventureSummative
 
                 else if (scene == 17)
                 {
+                    Thread.Sleep(5000);
+
                     stealthValue = randGen.Next(1, 11);
                     if (stealthValue >= 4)
                     {
@@ -206,6 +211,8 @@ namespace TextAdventureSummative
                 
                 else if (scene == 17)
                 {
+                    Thread.Sleep(5000);
+
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
                     {
@@ -326,11 +333,61 @@ namespace TextAdventureSummative
                     redLabel.Text = "SNEAK";
                     blueLabel.Text = "STEALTH KILL";
                     greenLabel.Text = "FIGHT";
-                    break; 
-
-
-
-
+                    break;
+                case 18:
+                    outputLabel.Text = "You sneak past and make a mad dash to the edge of the jungle";
+                    redLabel.Text = "CONTINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 19:
+                    outputLabel.Text = "You killed everyone, stop being so barbaric. THEY COULD AHAVE FAMILIES.";
+                    redLabel.Text = "CONTINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 20:
+                    outputLabel.Text = "YOU DIED. BE QUIETER";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 21:
+                    outputLabel.Text = "You stealthily killed everyone and make a mad dash to the path ahead. Good Job lil' ninja.";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 22:
+                    outputLabel.Text = "YAAAAAAAAAAY you died, again! This is so much fun!";
+                    redLabel.Text = "";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "CONTINUE";
+                    break;
+                case 23:
+                    outputLabel.Text = "You now come to a split in the road. Do you, go left or right? Don't mess it up now. only one answer is RIGHT";
+                    redLabel.Text = "RIGHT";
+                    blueLabel.Text = "left";
+                    greenLabel.Text = "";
+                    break;
+                case 24:
+                    outputLabel.Text = "YOU WON!";
+                    redLabel.Text = "CONTINUE";
+                    blueLabel.Text = "";
+                    greenLabel.Text = "";
+                    break;
+                case 25:
+                    outputLabel.Text = "Shoulda taken my hint dummy!";
+                    redLabel.Text = "";
+                    blueLabel.Text = "CONTINUE";
+                    greenLabel.Text = "";
+                    break;
+                case 26:
+                    outputLabel.Text = "PLAY AGAIN?";
+                    redLabel.Text = "YES!";
+                    blueLabel.Text = "NO.";
+                    greenLabel.Text = "";
+                    break;
 
 
 

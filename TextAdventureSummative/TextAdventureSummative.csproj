@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redButtonImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scene_26_end_.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
