@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace TextAdventureSummative
 {
@@ -16,6 +17,7 @@ namespace TextAdventureSummative
         int scene = 0;
         Random randGen = new Random();
         int attackValue, stealthValue;
+
         public Form1()
         {
             InitializeComponent();
@@ -43,6 +45,7 @@ namespace TextAdventureSummative
                 else if (scene == 3)
                 {
                     Thread.Sleep(5000);
+                    Refresh();
 
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
@@ -141,6 +144,7 @@ namespace TextAdventureSummative
                 else if (scene == 12)
                 {
                     Thread.Sleep(5000);
+                    Refresh();
 
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
@@ -169,6 +173,7 @@ namespace TextAdventureSummative
                 else if (scene == 17)
                 {
                     Thread.Sleep(5000);
+                    Refresh();
 
                     stealthValue = randGen.Next(1, 11);
                     if (stealthValue >= 4)
@@ -208,10 +213,11 @@ namespace TextAdventureSummative
                 {
                     scene = 9;
                 }
-                
+
                 else if (scene == 17)
                 {
                     Thread.Sleep(5000);
+                    Refresh();
 
                     attackValue = randGen.Next(1, 11);
                     if (attackValue >= 4)
@@ -222,12 +228,12 @@ namespace TextAdventureSummative
                     {
                         scene = 22;
                     }
-
-                    else if (scene == 22)
-                    {
-                        scene = 26;
-                    }
                 }
+
+                else if (scene == 22)
+                {
+                    scene = 26;
+                }             
             }
 
             switch (scene)
@@ -253,7 +259,7 @@ namespace TextAdventureSummative
                     blueLabel.Text = "";
                     break;
                 case 4:
-                    outputLabel.Text = "You start walking but end up falling into a pit of spikes left by the Natives";
+                    outputLabel.Text = "You start walking but end up falling into a pit of spikes left by the Natives. You died.";
                     redLabel.Text = "";
                     blueLabel.Text = "CONTINUE";
                     break;
@@ -388,7 +394,11 @@ namespace TextAdventureSummative
                     blueLabel.Text = "NO.";
                     greenLabel.Text = "";
                     break;
-
+                default:
+                    outputLabel.Text = "You wake up in a dark room with a small trap door and a single torch. Do you go into the trap door or stay in the room?";
+                    redLabel.Text = "LEAVE";
+                    blueLabel.Text = "STAY";
+                    break;
 
 
 
