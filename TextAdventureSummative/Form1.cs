@@ -203,11 +203,11 @@ namespace TextAdventureSummative
 
                 else if (scene == 26)
                 {
-                    Application.Exit();
+                    Application.Exit();        //Closes program when "NO" is selected when asked "PLAY AGAIN?"
                 }
             }
 
-            else if (e.KeyCode == Keys.Space)
+            else if (e.KeyCode == Keys.Space)  //Green Button press
             {
                 if (scene == 6)
                 {
@@ -236,7 +236,7 @@ namespace TextAdventureSummative
                 }             
             }
 
-            switch (scene)
+            switch (scene)  //Switch statements to advance scenes
             {
                 case 0:
                     outputLabel.Text = "You wake up in a dark room with a small trap door and a single torch. Do you go into the trap door or stay in the room?";
